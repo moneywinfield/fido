@@ -1,37 +1,45 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Fido by moneywinfield</title>
+    <meta name="description" content="Fido : fido 1.0 research">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fido</title>
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Fido</h1>
-        <p>fido 1.0 research</p>
 
-        <p class="view"><a href="https://github.com/moneywinfield/fido">View the Project on GitHub <small>moneywinfield/fido</small></a></p>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/moneywinfield/fido">View on GitHub</a>
 
+          <h1 id="project_title">Fido</h1>
+          <h2 id="project_tagline">fido 1.0 research</h2>
 
-        <ul>
-          <li><a href="https://github.com/moneywinfield/fido/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/moneywinfield/fido/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/moneywinfield/fido">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/moneywinfield/fido/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/moneywinfield/fido/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<a id="fido-10" class="anchor" href="#fido-10" aria-hidden="true"><span class="octicon octicon-link"></span></a>FIDO 1.0.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>FIDO1.0共分为两类标准，分别是UAF和U2F。下面分别对这两中类型的认证框架结构和流程作简单介绍。
+首先介绍在原有用户名\口令基础上增加第二因素认证的U2F。U2F认证之所以称为通用第二因素认证，因为其认证过程是在传统的用户名\密码认证过程中加入了第二种认证因素。U2F认证方式可以简化用户的用户名\密码模式而不会降低认证的安全性。在用户的注册和认证过程中，用户只需要按下USB设备上的一个按钮或者刷一下NFC设备等等。用户可以通过他们的U2F设备使用任何通过内置浏览器支持U2F协议的在线服务。U2F认证方式的特点如下：
+1、用户持有内置对web浏览器支持的U2F设备；
+2、用户在认证过程中必须使用所持有的U2F设备；
+3、服务器可以简化用户名\密码认证（例如仅使用四位数字密码）。
+图1和图2分别是U2F认证的注册流程图和认证流程图，详细描述了注册和认证的过程。</p>
 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
@@ -60,12 +68,17 @@ $ git checkout gh-pages
 
 <p>Having trouble with Pages? Check out the documentation at <a href="https://help.github.com/pages">https://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/moneywinfield">moneywinfield</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Fido maintained by <a href="https://github.com/moneywinfield">moneywinfield</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+
     
+
   </body>
 </html>
